@@ -1,0 +1,13 @@
+<li>
+  
+  <img [src]="park().photo" [alt]="park().name" width="50" height="50">
+  Id: {{ park().id }}
+  <strong>{{ park().name }}</strong>
+  {{ park().nbLikes }}
+  <a [routerLink]="['/parks', park().id]">Infos </a>
+  <button (click)="liked.emit(park())">Likes
+  </button>
+  <button (click)="deleted.emit(park().id)">Supprimer
+  </button>
+  
+</li>

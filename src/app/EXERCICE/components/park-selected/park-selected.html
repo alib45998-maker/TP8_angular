@@ -1,0 +1,14 @@
+@if (park(); as p) {
+  <div>
+    <ul>
+      <li>{{ p.name }}</li>
+      <li>Date d'ouverture: {{ p.openingDate }}</li>
+      <li>Horaire : {{ p.hours }}</li>
+      <li>Lieu : {{ p.location }}</li>
+    </ul>
+  </div>
+  <div>
+    <a routerLink="/parks">Retour</a>
+  </div>
+}
+

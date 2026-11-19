@@ -1,0 +1,8 @@
+
+<h1>Liste des parcs d'attraction</h1>
+<ul >
+@for (p of parks(); track p.id) {
+      <app-park-item [park]="p" (liked)="onLike($event)" (deleted)="onDelete($event)" />
+}
+</ul>
+
